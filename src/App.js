@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { BrowserRouter as Router, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Link, useParams } from 'react-router-dom';
 import { Route } from 'react-router-dom';
 import UserDetails from './components/UserDetails';
+import UserCard from './components/UserCard';
+import UserDetailsExtended from './components/UserDetailsExtended';
 
 function App() {
   const [username, setUsername] = useState('');
@@ -22,9 +24,7 @@ function App() {
     setUsername(event.target.value);
   }
 
-  const handleUserClick = (username) => {
-    window.location.href = `/user/${username}`;
-  }
+
 
   return (
     <Router>
@@ -35,9 +35,10 @@ function App() {
         {userData.length > 0 && (
           <ul>
             {userData.map(user => (
-              <li key={user.id} onClick={() => handleUserClick(user.login)}>
-                <h2>{user.login}</h2>
-                <img src={user.avatar_url} alt="avatar" />
+              <li key={user.id}>
+                <Link to={`/user/${user.login}`}>
+                  <UserCard user={user} />
+                </Link>
               </li>
             ))}
           </ul>
@@ -45,7 +46,9 @@ function App() {
       </div>
       <Routes>
         <Route exact path="/" component={App} />
-        <Route path="/user/:username" component={UserDetails} />
+        <Route path="/user/:login"
+          element={<UserDetailsExtended />}
+        />
       </Routes>
     </Router>
   );
