@@ -1,0 +1,19 @@
+.card {
+  width: 18rem;
+  margin: 1rem;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  height: 10rem;
+  object-fit: cover;
+}
+
+.card-title {
+  margin-bottom: 0;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
