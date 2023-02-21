@@ -1,14 +1,18 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { useParams } from "react-router-dom";
 
 
-function UserDetailsExtended({ username }) {
+
+
+function UserDetailsExtended() {
+    const { login } = useParams();
     const [userData, setUserData] = useState({});
     const [userRepos, setUserRepos] = useState([]);
     const [userOrgs, setUserOrgs] = useState([]);
 
     useEffect(() => {
-        axios.get(`https://api.github.com/users/${username}`)
+        axios.get(`https://api.github.com/users/${login}`)
             .then(response => {
                 setUserData(response.data);
             })
@@ -16,7 +20,7 @@ function UserDetailsExtended({ username }) {
                 console.log(error);
             });
 
-        axios.get(`https://api.github.com/users/${username}/repos`)
+        axios.get(`https://api.github.com/users/${login}/repos`)
             .then(response => {
                 setUserRepos(response.data);
             })
@@ -24,14 +28,14 @@ function UserDetailsExtended({ username }) {
                 console.log(error);
             });
 
-        axios.get(`https://api.github.com/users/${username}/orgs`)
+        axios.get(`https://api.github.com/users/${login}/orgs`)
             .then(response => {
                 setUserOrgs(response.data);
             })
             .catch(error => {
                 console.log(error);
             });
-    }, [username]);
+    }, [login]);
 
     return (
         <div>
@@ -61,4 +65,4 @@ function UserDetailsExtended({ username }) {
     );
 }
 
-export default UserDetailsExtended
+export default UserDetailsExtended;
