@@ -1,0 +1,94 @@
+.user-details-extended {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #c4dfe6;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.user-details-extended h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.user-details-extended img {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.user-details-extended p {
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.user-details-extended__repos {
+    margin-top: 20px;
+}
+
+.repo-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #2d84cc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.repo-item__name {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.repo-item__description {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.repo-item__stats {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #3b9df8;
+}
+
+.repo-item__stats span {
+    margin-right: 10px;
+}
+
+.repo-item__language {
+    display: inline-block;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.repo-item__language--javascript {
+    background-color: #f3ef00;
+}
+
+.repo-item__language--html {
+    background-color: #03aaf8;
+    color: #fff;
+}
+
+.repo-item__language--css {
+    background-color: #40ccf7;
+    color: #fff;
+}
+
+.repo-item__language--python {
+    background-color: #3572a5;
+    color: #fff;
+}
+
+.repo-item__language--ruby {
+    background-color: #ff0408;
+    color: #fff;
+}
