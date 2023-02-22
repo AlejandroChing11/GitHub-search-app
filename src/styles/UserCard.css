@@ -1,0 +1,27 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+.user-card {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #0a6ae7;
+    border-radius: 4px;
+    box-shadow: 2px 2px 4px #148bc2;
+}
+
+.user-card a {
+    color: #333333;
+    text-decoration: none;
+}
+
+.user-card a:hover {
+    color: #47647c;
+    text-decoration: none;
+}
+
+.user-avatar {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}

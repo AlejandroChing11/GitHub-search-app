@@ -24,20 +24,20 @@ function Home() {
 
 
     return (
-            <div>
-                <h1>Github User Search</h1>
-                <input type="text" value={username} onChange={handleUsernameChange} />
-                <button onClick={handleSearch}>Search</button>
-                {userData.length > 0 && (
-                    <ul>
-                        {userData.map(user => (
-                            <li key={user.id}>
-                                <UserCard user={user} login={user.login} />
-                            </li>
-                        ))}
-                    </ul>
-                )}
-            </div>
+        <div>
+            <h1>Github User Search</h1>
+            <input type="text" value={username} onChange={handleUsernameChange} />
+            <button onClick={handleSearch}>Search</button>
+            {userData.length > 0 && (
+                <ul>
+                    {userData.map(user => (
+                        <li key={user.id}>
+                            <UserCard user={user} login={user.login} />
+                        </li>
+                    ))}
+                </ul>
+            )}
+        </div>
     );
 }
 
