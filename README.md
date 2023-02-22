@@ -1,6 +1,4 @@
 # README.MD
-Making attractive and usable readme's. 
-This is a short description about the content of my proyect. This text have to be simple and explicit.
 
 ## Content
 La página cuenta con una estructura básica, con tres carpetas principales: Components, Styles y Pages. Cada carpeta cumple una función específica. En Components, se encuentran todos los componentes subdivididos. En Pages, se encuentran todas las vistas o páginas. Finalmente, en Styles, se encuentran los estilos de los componentes y de las páginas.
