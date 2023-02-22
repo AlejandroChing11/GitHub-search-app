@@ -3,7 +3,6 @@ import axios from "axios";
 import { useParams } from "react-router-dom";
 import './../styles/UserDetailsView.css';
 
-
 function UserDetailsExtended() {
     const { login } = useParams();
     const [userData, setUserData] = useState({});
@@ -63,13 +62,14 @@ function UserDetailsExtended() {
             </div>
             <div className="user-details-extended__orgs">
                 <h3>Organizations:</h3>
-                <ul>
+                <div className="org-cards-container">
                     {userOrgs.map(org => (
-                        <li key={org.id}>
-                            <a href={org.html_url}>{org.login}</a>
-                        </li>
+                        <div className="org-card" key={org.id}>
+                            <img src={org.avatar_url} alt="avatar" className="org-card__avatar" />
+                            <a href={org.html_url} className="org-card__name">{org.login}</a>
+                        </div>
                     ))}
-                </ul>
+                </div>
             </div>
         </div>
     );

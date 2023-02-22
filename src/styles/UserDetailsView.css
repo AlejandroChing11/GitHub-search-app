@@ -1,9 +1,12 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
 .user-details-extended {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #a2dceb8c;
-    border: 1px solid #000000;
+    background-color: rgba(5, 37, 219, 0.281);
+    border: 1px solid #5822ec79;
     border-radius: 5px;
     text-align: center;
 }
@@ -35,10 +38,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: 1px solid #000305;
+    border: 1px solid hwb(236 2% 1% / 0.459);
     border-radius: 5px;
     padding: 10px;
     margin-bottom: 10px;
+    box-shadow: 0px 0px 5px #ccc;
+    
 }
 
 .repo-item__name {
@@ -55,7 +60,7 @@
     display: flex;
     justify-content: space-between;
     font-size: 12px;
-    color: #3b9df8;
+    color: #000407;
 }
 
 .repo-item__stats span {
@@ -91,4 +96,46 @@
 .repo-item__language--ruby {
     background-color: #ff0408;
     color: #fff;
+}
+
+.user-details-extended__orgs {
+    margin-top: 20px;
+}
+
+.org-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.org-card {
+    width: 250px;
+    height: 300px;
+    margin: 10px;
+    background-color: #f2f2f21a;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #ccc;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.org-card__avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    display: block;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.org-card__name {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333;
 }
