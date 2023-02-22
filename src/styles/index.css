@@ -1,4 +1,5 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~bootstrap/dist/css/bootstrap.min.css';
 
 h1 {
     color: #007bff;
@@ -64,4 +65,11 @@ li {
 .user-card p {
     font-size: 1.25rem;
     margin: 0.5rem 0;
+}
+
+.spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
 }
