@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from "axios";
 import UserCard from '../../components/UserCard';
+import '../../styles/index.css';
 
 
 function Home() {
@@ -20,8 +21,6 @@ function Home() {
     const handleUsernameChange = (event) => {
         setUsername(event.target.value);
     }
-
-
 
     return (
         <div>
