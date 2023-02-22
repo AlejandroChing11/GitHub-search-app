@@ -13,13 +13,11 @@ Aquí puedes ver el live demo de la pagina --> [Demo of the proyect](https://git
 Here you can see the live demo of the site --> [Demo of the proyect](https://git-hub-search-app-psi.vercel.app/)
 
 ## Preview
-La pagina luce así!
+La pagina luce así! -- The page looks like this!
 
-![](/preview.jpg)
-
-The page looks like this!
-
-![](/preview.jpg)
+![](/Home.png)
+![](/Search.png)
+![](/Details.png)
 
 ### Notes
 La funcionalidad de la página es simple pero efectiva. Al buscar un usuario en GitHub, se puede hacer clic en su tarjeta para obtener más información. La página muestra detalles como el nombre, la imagen de perfil, la biografía y el número de seguidores. Además, se muestran algunos de los repositorios más populares del usuario, con información sobre el nombre del repositorio, la descripción y el lenguaje de programación utilizado.
